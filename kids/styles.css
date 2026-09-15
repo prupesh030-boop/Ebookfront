@@ -90,6 +90,10 @@ a{color:var(--primary)}
 .track{display:flex;gap:14px;width:max-content;animation:slide 30s linear infinite}
 .slider:hover .track{animation-play-state:paused}
 @keyframes slide{to{transform:translateX(-50%)}}
+.slider.reverse{margin-top:14px}
+.slider.reverse .track{animation:slide-rev 34s linear infinite}
+.slider.reverse:hover .track{animation-play-state:paused}
+@keyframes slide-rev{from{transform:translateX(-50%)}to{transform:none}}
 .slide{margin:0;background:#fff;border:2px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 10px 24px rgba(108,60,224,.12);flex-shrink:0}
 .slide img{display:block;height:320px;width:auto;object-fit:cover;background:#f4f1ff}
 .slide figcaption{text-align:center;font-size:13px;font-weight:700;color:var(--primary);padding:8px 10px;background:#fff}
@@ -193,5 +197,18 @@ a{color:var(--primary)}
   .inside-grid{grid-template-columns:repeat(2,1fr)}
   .steps{grid-template-columns:1fr 1fr}
   .slide img{height:240px}
+  .sheet-pack{padding:14px 12px 12px}
+  .sheet-pack h2{font-size:19px}
+  .pack-sub{font-size:12px;margin-bottom:8px}
+  .sheet-grid{gap:8px;margin-bottom:8px}
+  .sheet{min-height:78px;padding:6px 4px}
+  .sheet-tag{display:none}
+  .sheet-big{font-size:17px}
+  .sheet-draw{font-size:15px}
+  .pack-ages{margin-bottom:8px}
+  .pack-ages span{font-size:10px;padding:2px 8px}
+  .pack-author{font-size:11px}
+  .hero-card-foot{padding:14px}
+  .mini-price strong{font-size:26px}
   .section{padding:44px 0}
 }
