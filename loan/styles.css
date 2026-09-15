@@ -39,15 +39,14 @@ a{color:var(--navy)}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(800px 400px at 20% 10%,rgba(255,207,46,.35),transparent),radial-gradient(700px 380px at 90% 20%,rgba(10,138,59,.12),transparent)}
 .hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;width:100%}
 .pill{display:inline-block;background:#fff;border:1px solid var(--border);color:var(--navy);padding:6px 14px;border-radius:999px;font-size:14px;font-weight:700}
-/* Offer countdown bar — navy/yellow theme */
-.offer-bar{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;border-bottom:3px solid var(--yellow)}
-.offer-bar-inner{display:flex;align-items:center;justify-content:center;gap:14px;padding:8px 20px;flex-wrap:wrap}
-.offer-text{font-weight:800;font-size:15px;color:#ffe9a8}
+/* Hero countdown — navy/yellow theme, above pill */
+.hero-timer{margin-bottom:12px}
+.hero-timer .offer-text{display:block;font-weight:800;font-size:15px;color:#9a3412;margin-bottom:8px}
 .cd{display:flex;align-items:flex-start;gap:6px}
 .cd-box{background:#fff;color:var(--navy);border:1px solid var(--border);border-radius:12px;min-width:56px;padding:4px 8px 3px;text-align:center;line-height:1.2}
 .cd-box strong{display:block;font-size:20px;font-variant-numeric:tabular-nums;letter-spacing:1px}
 .cd-box small{font-size:11px;font-weight:700;color:var(--muted)}
-.cd-sep{color:var(--yellow);font-weight:800;font-size:20px;line-height:1.6}
+.cd-sep{color:var(--navy);font-weight:800;font-size:20px;line-height:1.6}
 .hero h1{font-size:44px;line-height:1.15;margin:12px 0;color:var(--navy)}
 .hero h1 .green{color:var(--green)}
 .lead{font-size:18px;color:#111;font-weight:600;margin:0 0 8px}
@@ -151,8 +150,7 @@ a{color:var(--navy)}
 .success{width:64px;height:64px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-size:30px;margin:0 auto}
 
 @media(max-width:900px){
-  .offer-bar-inner{gap:8px;padding:6px 12px}
-  .offer-text{font-size:13px}
+  .hero-timer .offer-text{font-size:13px}
   .cd-box{min-width:48px}
   .cd-box strong{font-size:17px}
   .hero{min-height:auto;padding:28px 0}
