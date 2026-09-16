@@ -15,6 +15,12 @@ body{margin:0;font-family:'Mukta','Poppins',system-ui,sans-serif;color:var(--tex
 .muted{color:var(--muted)}
 a{color:var(--navy)}
 
+/* Sliding loan-types ticker */
+.ticker{background:linear-gradient(90deg,var(--navy),var(--green));color:#fff;overflow:hidden;white-space:nowrap;padding:8px 0;font-weight:700;font-size:14px}
+.ticker-track{display:inline-flex;animation:slide 25s linear infinite}
+.ticker-track span{padding-right:8px}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
 /* Topbar - light cream like reference image */
 .topbar{position:sticky;top:0;z-index:40;background:rgba(255,249,230,.96);backdrop-filter:blur(8px);color:var(--navy);border-bottom:1px solid var(--border)}
 .topbar-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 20px}

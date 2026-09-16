@@ -15,6 +15,12 @@ body{margin:0;font-family:'Poppins','Baloo 2',system-ui,sans-serif;color:var(--t
 .muted{color:var(--muted)}
 a{color:var(--primary)}
 
+/* Sliding category ticker */
+.ticker{background:linear-gradient(90deg,var(--primary),var(--cta));color:#fff;overflow:hidden;white-space:nowrap;padding:8px 0;font-weight:700;font-size:14px}
+.ticker-track{display:inline-flex;animation:slide 22s linear infinite}
+.ticker-track span{padding-right:8px}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
 /* Buttons */
 .btn{border:0;border-radius:999px;padding:10px 22px;font-weight:700;font-family:inherit;cursor:pointer;transition:.2s;text-decoration:none;display:inline-block}
 .btn-lg{font-size:17px;padding:14px 28px}
