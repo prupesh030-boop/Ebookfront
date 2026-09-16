@@ -15,14 +15,10 @@ body{margin:0;font-family:'Poppins','Baloo 2',system-ui,sans-serif;color:var(--t
 .muted{color:var(--muted)}
 a{color:var(--primary)}
 
-/* Brand bar */
-.brandbar{background:#fff;border-bottom:1px solid var(--border)}
-.brandbar-inner{display:flex;align-items:center;gap:10px;padding:8px 20px}
-.brandbar img{height:30px;width:30px;object-fit:cover;border-radius:8px}
-.brandbar span{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:15px;color:var(--primary);letter-spacing:.3px}
-
-/* Sliding category ticker */
-.ticker{background:linear-gradient(90deg,var(--primary),var(--cta));color:#fff;overflow:hidden;white-space:nowrap;padding:8px 0;font-weight:700;font-size:14px}
+/* Sliding category ticker with brand */
+.ticker{background:linear-gradient(90deg,var(--primary),var(--cta));color:#fff;overflow:hidden;white-space:nowrap;padding:6px 0;font-weight:700;font-size:14px;display:flex;align-items:center}
+.ticker-brand{display:inline-flex;align-items:center;gap:6px;flex-shrink:0;background:#fff;color:var(--primary);font-size:13px;padding:3px 12px 3px 5px;border-radius:999px;margin:0 10px;z-index:2}
+.ticker-brand img{height:22px;width:22px;object-fit:cover;border-radius:50%}
 .ticker-track{display:inline-flex;animation:slide 22s linear infinite}
 .ticker-track span{padding-right:8px}
 @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -222,7 +218,8 @@ a{color:var(--primary)}
   .pack-author{font-size:11px}
   .hero-card-foot{padding:14px}
   .mini-price strong{font-size:26px}
-  .brandbar img{height:26px;width:26px}
-  .brandbar span{font-size:13px}
+  .ticker{font-size:12px}
+  .ticker-brand{font-size:11px;margin:0 8px}
+  .ticker-brand img{height:20px;width:20px}
   .section{padding:44px 0}
 }
