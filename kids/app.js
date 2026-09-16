@@ -1,4 +1,4 @@
-// Order modal — opens Razorpay payment directly.
+// Order modal — leads to Cashfree payment form.
 (function () {
   var modal = document.getElementById('modal');
   var closeBtn = document.getElementById('modalClose');
