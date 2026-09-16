@@ -30,6 +30,8 @@ a{color:var(--navy)}
 .btn-block{width:100%}
 .btn-gold{background:var(--navy);color:#fff;box-shadow:0 8px 20px rgba(14,42,94,.35)}
 .btn-gold:hover{transform:translateY(-1px);background:var(--navy2)}
+.btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 8px 20px rgba(255,207,46,.35)}
+.btn-yellow:hover{transform:translateY(-1px);filter:brightness(1.05)}
 .btn-ghost{background:#fff;color:var(--navy);border:2px solid var(--navy)}
 .btn-dark{background:var(--navy);color:#fff}
 .btn:focus-visible,.faq-q:focus-visible,.modal-close:focus-visible{outline:3px solid #2563eb;outline-offset:2px}
