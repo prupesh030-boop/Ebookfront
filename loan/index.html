@@ -15,6 +15,20 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
+  <!-- Mobile sticky timer header (mobile only) -->
+  <div class="offer-bar">
+    <div class="container offer-bar-inner">
+      <span class="offer-text">🔥 60% OFF — आजची ऑफर संपायला:</span>
+      <div class="cd" role="timer" aria-live="off" aria-label="ऑफर संपायला बाकी वेळ">
+        <div class="cd-box"><strong id="cdHm">--</strong><small>तास</small></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-box"><strong id="cdMm">--</strong><small>मिनिटे</small></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-box"><strong id="cdSm">--</strong><small>सेकंद</small></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Hero -->
   <header class="hero">
     <div class="hero-bg"></div>
@@ -35,6 +49,15 @@
         <p class="lead">गृह कर्ज, पर्सनल लोन, क्रेडिट कार्ड, गोल्ड लोन, पीक कर्ज, बाईक EMI — सगळ्यासाठी एक सोपा 30 दिवसांचा कर्जमुक्ती प्लॅन.</p>
         <div class="hero-cta">
           <button class="btn btn-gold btn-lg" data-buy>आत्ताच घ्या — फक्त ₹199</button>
+        </div>
+        <div class="buy-card">
+          <span class="buy-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span>
+          <div>
+            <strong id="buyCount">0</strong>
+            <small>जणांनी आधीच ही ऑफर घेतली आहे</small>
+          </div>
         </div>
         <div class="trust">
           <span>🔒 UPI ने सुरक्षित पेमेंट</span>
@@ -253,27 +276,15 @@
   <div class="modal-backdrop" id="modal" aria-hidden="true">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
-      <div id="modalStep1">
-        <h3 id="modalTitle">₹199 • ईबुक ऑर्डर करा</h3>
-        <p class="muted">नाव + WhatsApp नंबर द्या — पेमेंट लिंक आणि PDF त्याच नंबरवर मिळेल.</p>
+      <div id="modalPay">
+        <h3 id="modalTitle">₹199 • ईबुक घ्या</h3>
+        <p class="muted">खालच्या बटणावरून ₹199 पेमेंट करा — नाव, Email, फोन Cashfree पेजवरच भरा. PDF लगेच मिळेल.</p>
         <div class="modal-product">
           <span>📘</span>
           <div><strong>कर्ज वाढतंय पण कमी होत नाही?</strong><br /><small>मराठी PDF • 30 दिवस प्लॅन • ₹199 (₹499 ऐवजी)</small></div>
         </div>
-        <form id="orderForm">
-          <label>तुमचे नाव<input type="text" id="fName" placeholder="उदा. सचिन पाटील" required /></label>
-          <label>WhatsApp नंबर<input type="tel" id="fContact" inputmode="numeric" pattern="[0-9+ ]{10,15}" placeholder="98XXXXXXXX" required /></label>
-          <button class="btn btn-gold btn-block" type="submit" id="payBtn">पुढे जा — पेमेंट करा ₹199</button>
-        </form>
+        <p><a class="btn btn-gold btn-block" href="https://payments.cashfree.com/forms/DebtIncreasing" target="_blank" rel="noopener">₹199 भरा — UPI / कार्ड</a></p>
         <small class="muted">🔒 सुरक्षित पेमेंट • UPI / कार्ड चालते • PDF 2 मिनिटांत</small>
-      </div>
-      <div id="modalStep2" hidden>
-        <div class="success">✓</div>
-        <h3>धन्यवाद <span id="sName">मित्र</span>!</h3>
-        <p>ऑर्डर नोंद झाली. खालच्या बटणावरून WhatsApp वर पेमेंट पूर्ण करा — PDF लगेच मिळेल.</p>
-        <code id="orderId">ORD-0000</code>
-        <p><a class="btn btn-gold btn-block" id="waPay" href="https://wa.me/917028250948" target="_blank" rel="noopener">WhatsApp वर पेमेंट करा</a></p>
-        <button class="btn btn-dark btn-block" id="doneBtn">बंद करा</button>
       </div>
     </div>
   </div>
