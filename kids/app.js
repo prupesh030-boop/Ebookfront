@@ -8,6 +8,7 @@
     modal.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    if (window.fbq) window.fbq('track', 'InitiateCheckout', {value: 199, currency: 'INR'});
   }
   function closeModal() {
     modal.classList.remove('open');
@@ -108,4 +109,6 @@
   })();
 
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  if (window.fbq) window.fbq('track', 'ViewContent', {content_name: 'Kids Worksheets', value: 199, currency: 'INR'});
 })();
