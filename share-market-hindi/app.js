@@ -167,7 +167,7 @@
         els.forEach(function (el, i) { if (entry[1][i]) el.innerHTML = hi ? entry[1][i] : el.getAttribute('data-en') || el.innerHTML; });
       });
       document.documentElement.lang = hi ? 'hi' : 'en';
-      document.title = hi ? 'शेयर मार्केट सीखो? | Basic to Advance ईबुक ₹199 - Digital Growth' : 'Confused by Share Market? | Share Market Mastery Hindi Ebook ₹199 - Digital Growth';
+      document.title = hi ? 'शेयर मार्केट सीखो? | Basic to Advance ईबुक ₹199 - Digital Growth' : 'Share Market Mastery Hindi Ebook ₹199 | Basic to Advance - Digital Growth';
       btnEn.classList.toggle('active', !hi);
       btnHi.classList.toggle('active', hi);
       try { localStorage.setItem('sm-lang', lang); } catch (e) {}
