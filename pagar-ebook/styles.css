@@ -36,7 +36,7 @@ h1,h2,.serif{font-family:'Fraunces','Mukta',serif;line-height:1.15;letter-spacin
 .btn-lg{font-size:19px;padding:16px 30px}
 .btn-block{width:100%;text-align:center}
 /* visual */
-.cover-top{max-width:560px;margin:0 auto 28px}
+.cover-top{display:none;max-width:560px;margin:0 auto 28px}
 .cover-top .book-frame{padding:22px}
 .cover-top img{max-height:420px;object-fit:cover}
 .book-frame{position:relative;background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 24px 60px rgba(107,31,26,.14)}
@@ -123,8 +123,9 @@ h1,h2,.serif{font-family:'Fraunces','Mukta',serif;line-height:1.15;letter-spacin
 @media(max-width:860px){
   .hero-grid{grid-template-columns:1fr}
   .hero{padding-top:22px}
-  .cover-top{margin-bottom:20px}
+  .cover-top{display:block;margin-bottom:20px}
   .cover-top img{max-height:none}
+  .book-desktop{display:none}
   .deliver,.t-grid,.ba-grid{grid-template-columns:1fr}
   .price-sticker{right:6px}
 }
